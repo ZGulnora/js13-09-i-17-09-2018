@@ -10,6 +10,9 @@ console.log("Моя первая страница.");
 prompt("Моя первая страница.");
 </script> -->
 <script>
+// 	var name = prompt("Ваше имя?", "");
+// alert("Ваше имя " +name );
+
 		// function countRabbits () {
 		// 	for (var i = 1; i <=3; i++) {
 		// 		alert("Кролик номер" +i);
@@ -36,79 +39,120 @@ prompt("Моя первая страница.");
 </script>
 </head>
 <body>
-	<!-- <input type="button" onclick="countRabbits()" value="Считать кроликов!"/> --
+	<form name="search">
+    <label>Поиск по сайту:
+      <input type="text" name="search">
+    </label>
+    <input type="submit" value="Искать!">
+  </form>
+
+  <hr>
+
+  <form name="search-person">
+    Поиск по посетителям:
+    <table id="age-table">
+      <tr>
+        <td>Возраст:</td>
+        <td id="age-list">
+          <label>
+            <input type="radio" name="age" value="young">до 18</label>
+          <label>
+            <input type="radio" name="age" value="mature">18-50</label>
+          <label>
+            <input type="radio" name="age" value="senior" checked>более 50</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Дополнительно:</td>
+        <td>
+          <input type="text" name="info[0]">
+          <input type="text" name="info[1]">
+          <input type="text" name="info[2]">
+        </td>
+      </tr>
+
+    </table>
+
+    <input type="submit" value="Искать!">
+  </form>
+	<!-- <input type="button" onclick="countRabbits()" value="Считать кроликов!"/> -- -->
 	
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 	
-		// var a ="Hello";
-		// alert(a);
+	 var a ="Hello";
+	 alert(a);
 
-		// var hello = "Hello World";
-		// var message;
-		// message = hello;
-		// alert(hello);
-		// alert(message);
+	 var hello = "Hello World";
+	 var message;
+	 message = hello;
+	 alert(hello);
+	 alert(message);
 
-		// var return =5;
-		// alert(return);
+	 var return =5;
+	 alert(return);
 
-		// var COLOR_RED ="#f00";
-		// alert(COLOR_RED);
+	 var COLOR_RED ="#f00";
+	 alert(COLOR_RED);
 
-		// var a ="1234dfgh";
-		// alert(parseInt(a));
+	 var a ="1234dfgh";
+	 alert(parseInt(a));
 
-		// var a =5;
-		// var b =6;
-		// alert((a/b+a))
+	 var a =5;
+	 var b =6;
+	 alert((a/b+a))
 		
-		// var a = "hello";
-		// var b = "My";
-		// var c = "name";
-		// var d = "Is";
-		// var I = "Gulnora";
+	 var a = "hello";
+	 var b = "My";
+	 var c = "name";
+	 var d = "Is";
+	 var I = "Gulnora";
 		
-		// alert(a +" "+b+ " "+c +" "+d +" "+I)
+	 alert(a +" "+b+ " "+c +" "+d +" "+I)
 
-		// var a = "hello";
-		// var b = "My";
-		// var c = "age";
-		// var d = "Is";
-		// var I = 56;
+	 var a = "hello";
+	 var b = "My";
+	 var c = "age";
+	 var d = "Is";
+	 var I = 56;
 		
-		// alert(a +" "+b+ " "+c +" "+d +" "+I)
+	 alert(a +" "+b+ " "+c +" "+d +" "+I)
 
-		// var x = 10;
-		// x += 5;
-		// x = x + 5;
-		// alert(x);
+	 var x = 10;
+	 x += 5;
+	 x = x + 5;
+	 alert(x);
 
-		// var a = 5;
-		// if (a==="5") {
-		// 	alert("rabotaet");
-		// }
-		// else {
-		// 	alert ("ne rabotaet");
-		// }
+	 var a = 5;
+	 if (a==="5") {
+	 	alert("rabotaet");
+	 }
+	 else {
+	 	alert ("ne rabotaet");
+	 }
 
-		// var a = "ravshan";
-		// if (a==="ravshan") {
-		// 	alert("rabotaet");
-		// }
-		// else {
-		// 	alert ("ne rabotaet");
-		// }
+		var a = "ravshan";
+		if (a==="ravshan") {
+	 	alert("rabotaet");
+		}
+	 else {
+			alert ("ne rabotaet");
+		}
 
-		// var a = "ravshan";
-		// if (!a==="ravshan" ) {
-		// 	alert("rabotaet");
-		// }
-		// else {
-		// 	alert ("ne rabotaet");
-		// }
+	 var a = "ravshan";
+		if (!a==="ravshan" ) {
+	 	alert("rabotaet");
+	 }
+		else {
+			alert ("ne rabotaet");
+	 } 
 
+
+ 
 	</script> 
-	 <h2 onclick="alert('Test');">Hello World!!! </h2> -->
+ -->	<!--  <h2 onclick="alert('Test');">Hello World!!! </h2> -->
+
 	
 </body>
+<script src="js/script.js"></script>
 </html>
