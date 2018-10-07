@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Заголовок документа</title>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/script.js">
+</script> 
+</head> 
+
+<body> 
+<!-- <div onClick="showMessage();">Щелкни меня</div> 
+ -->
+ <form name="forma1"> 
+<!-- Введите длину прямоугольника --> 
+<input type="text" name="t1" size="10" placeholder="введи число"><br><br>
+<!-- Введите ширину прямоугольника  -->
+<input type="text" name="t2" size="10" placeholder="введи число" ><br><br>
+
+<!-- Площадь прямоугольника равна --> 
+<input type="text" name="res" size="10" placeholder="получи значение"> 
+<input type="button" name="button" value="Вычислить" onClick="areaRectangle(forma1);"><br><br> 
+</form> 
+
+<table border="2" width="200" height="50">
+<tr> 
+	<td><div id="red" onClick="message('Вы щелкнули по красному квадратику');"></div>
+	</td> 
+	<td><div id="green" onClick="message('Вы щелкнули по зеленому квадратику');"></div>
+	</td> 
+	<td> <div id="blue" onClick="message('Вы щелкнули по синему квадратику');"></div>
+	</td> 
+</tr>
+</table>
+<br>
+
+<form name="forma2"> 
+	<textarea name="desc" cols=45 rows=4 style="color: red; font-weight: bold; font-size: 20px;">
+	</textarea> 
+</form> 
+<forma2>
+<ul> 
+	<li onMouseOver="showDesc(forma2,'Малина обыкновенная — кустарник с многолетним корневищем,'+ ' из которого развиваются двухгодичные надземные стебли высотой до полутора метров.');" onMouseOut="del(forma2);">Малина</li>
+	<li onMouseOver="showDesc(forma2,'Черника — кустарничек высотой 15—30 см. Ветви отходят'+ ' от главного стволика под острыми углами.');" onMouseOut="del(forma2);">Черника</li>
+	<li onMouseOver="showDesc(forma2,'Ежевика — название нескольких видов растений из рода Rubus'+ ' семейства Розовые.');" onMouseOut="del(forma2);">Ежевика</li> 
+</ul>
+
+</body> 
+</html>
+
